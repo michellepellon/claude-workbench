@@ -1,5 +1,5 @@
 ---
-name: pdf
+name: workbench:pdf
 description: Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. Use when you need to programmatically process, generate, or analyze PDF documents.
 when_to_use: When extracting text or tables from PDFs. When merging or splitting PDF files. When creating PDFs programmatically. When filling PDF forms. When converting PDFs to images. When processing PDFs at scale.
 allowed-tools: Read, Write, Bash

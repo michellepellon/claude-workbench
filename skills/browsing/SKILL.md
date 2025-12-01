@@ -1,5 +1,5 @@
 ---
-name: browsing
+name: workbench:browsing
 description: Control Chrome browser directly via DevTools Protocol using the use_browser MCP tool. Use when you need browser automation - authenticated sessions, multi-tab management, form filling, content extraction, web scraping. Provides navigate, click, type, extract, screenshot, eval, and tab management actions. Use this instead of WebFetch for interactive sites requiring authentication or JavaScript execution.
 when_to_use: When sites require authentication or login. When JavaScript execution is needed. When automating form filling. When extracting content from interactive sites. When WebFetch fails or is insufficient. When multi-step browser workflows are required.
 allowed-tools: mcp__chrome__use_browser

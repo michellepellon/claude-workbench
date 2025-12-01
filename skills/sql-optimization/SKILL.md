@@ -1,5 +1,5 @@
 ---
-name: sql-optimization
+name: workbench:sql-optimization
 description: Optimize SQL queries through EXPLAIN analysis, indexing strategies, and query rewriting. Use when debugging slow queries, designing schemas, or improving database performance.
 when_to_use: When queries are slow. When designing database schemas. When seeing sequential scans on large tables. When debugging N+1 query problems. When pagination is slow.
 version: 1.0.0

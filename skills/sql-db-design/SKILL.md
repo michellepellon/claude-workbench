@@ -1,5 +1,5 @@
 ---
-name: sql-db-design
+name: workbench:sql-db-design
 description: SQL database schema design best practices - data types, constraints, indexing, JSONB, and common patterns. Focuses on PostgreSQL but principles apply broadly. Use when designing tables, choosing data types, or setting up constraints.
 when_to_use: When designing database schemas. When choosing data types. When adding constraints or indexes. When using JSONB. When partitioning large tables.
 version: 1.0.0

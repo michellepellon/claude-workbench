@@ -1,5 +1,5 @@
 ---
-name: remembering-conversations
+name: workbench:remembering-conversations
 description: Search previous Claude Code conversations for facts, patterns, decisions, and context. Use when user mentions "we discussed this before", when debugging similar issues, when looking for architectural decisions, or before reinventing solutions.
 when_to_use: When user says "we discussed this before". When debugging similar issues. When looking for past architectural decisions. When searching for code patterns from previous work. Before reinventing solutions.
 allowed-tools: Bash, Read, Task

@@ -43,45 +43,45 @@ Reusable expertise modules that Claude activates when relevant:
 
 | Skill | Description |
 |-------|-------------|
-| `python-development` | Modern Python 3.12+, FastAPI, Django, pytest, async patterns |
-| `javascript-typescript` | ES6+, TypeScript types, Node.js, Jest/Vitest |
-| `shell-scripting` | Production Bash with defensive patterns, ShellCheck, Bats |
-| `sql-db-design` | PostgreSQL schema design, constraints, indexing |
-| `sql-optimization` | Query optimization, EXPLAIN analysis, N+1 fixes |
+| `workbench:python-development` | Modern Python 3.12+, FastAPI, Django, pytest, async patterns |
+| `workbench:javascript-typescript` | ES6+, TypeScript types, Node.js, Jest/Vitest |
+| `workbench:shell-scripting` | Production Bash with defensive patterns, ShellCheck, Bats |
+| `workbench:sql-db-design` | PostgreSQL schema design, constraints, indexing |
+| `workbench:sql-optimization` | Query optimization, EXPLAIN analysis, N+1 fixes |
 
 #### Testing & Quality
 
 | Skill | Description |
 |-------|-------------|
-| `test-driven-development` | Strict TDD workflow with comprehensive coverage |
-| `semantic-refactoring` | Safe codebase-wide refactoring with Serena MCP |
-| `simplifying-control-flow` | Flatten nested conditionals, early returns |
+| `workbench:test-driven-development` | Strict TDD workflow with comprehensive coverage |
+| `workbench:semantic-refactoring` | Safe codebase-wide refactoring with Serena MCP |
+| `workbench:simplifying-control-flow` | Flatten nested conditionals, early returns |
 
 #### Data & Visualization
 
 | Skill | Description |
 |-------|-------------|
-| `data-visualization` | Charts with Tufte's principles, D3.js patterns |
-| `quick-descriptive-stats` | Automatic EDA for CSV files |
-| `pdf` | Extract, create, merge, split PDF documents |
-| `xlsx` | Excel file operations, formulas, formatting |
+| `workbench:data-visualization` | Charts with Tufte's principles, D3.js patterns |
+| `workbench:quick-descriptive-stats` | Automatic EDA for CSV files |
+| `workbench:pdf` | Extract, create, merge, split PDF documents |
+| `workbench:xlsx` | Excel file operations, formulas, formatting |
 
 #### Content & SEO
 
 | Skill | Description |
 |-------|-------------|
-| `seo-expert` | Technical SEO, content strategy, schema markup |
-| `writing-clearly-and-concisely` | Strunk's rules for clear prose |
+| `workbench:seo-expert` | Technical SEO, content strategy, schema markup |
+| `workbench:writing-clearly-and-concisely` | Strunk's rules for clear prose |
 
 #### Workflow
 
 | Skill | Description |
 |-------|-------------|
-| `brainstorming` | Socratic questioning to refine ideas |
-| `creating-skills` | TDD for writing new skills |
-| `executing-plans` | Controlled batch execution with checkpoints |
-| `remembering-conversations` | Search past Claude Code sessions |
-| `browsing` | Chrome automation via DevTools Protocol |
+| `workbench:brainstorming` | Socratic questioning to refine ideas |
+| `workbench:creating-skills` | TDD for writing new skills |
+| `workbench:executing-plans` | Controlled batch execution with checkpoints |
+| `workbench:remembering-conversations` | Search past Claude Code sessions |
+| `workbench:browsing` | Chrome automation via DevTools Protocol |
 
 ### MCP Servers
 
@@ -108,14 +108,14 @@ Commands are invoked with slash notation:
 Skills activate automatically based on context. You can also invoke them explicitly:
 
 ```
-I need help with a FastAPI endpoint (activates python-development)
-Review this shell script (activates shell-scripting)
+I need help with a FastAPI endpoint (activates workbench:python-development)
+Review this shell script (activates workbench:shell-scripting)
 ```
 
 Or reference them directly:
 
 ```
-Using the sql-optimization skill, analyze this query...
+Using the workbench:sql-optimization skill, analyze this query...
 ```
 
 ## Project Structure
@@ -158,7 +158,7 @@ Create a new skill directory with a `SKILL.md` file:
 
 ```markdown
 ---
-name: my-skill
+name: workbench:my-skill
 description: What this skill does
 when_to_use: When to activate this skill
 version: 1.0.0
@@ -169,6 +169,8 @@ allowed-tools: Read, Write, Edit, Bash
 
 Instructions for Claude when this skill is active...
 ```
+
+Note: The `workbench:` prefix prevents namespace collisions with other plugins.
 
 Add the skill to `.claude-plugin/manifest.json`:
 

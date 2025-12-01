@@ -1,5 +1,5 @@
 ---
-name: writing-clearly-and-concisely
+name: workbench:writing-clearly-and-concisely
 description: Apply Strunk's timeless writing rules to ANY prose humans will read—documentation, commit messages, error messages, explanations, reports, or UI text. Makes your writing clearer, stronger, and more professional.
 when_to_use: When writing or editing any text for humans—docs, commits, errors, UI copy, comments, reports, explanations. If a human will read it, apply these rules.
 version: 1.0.0

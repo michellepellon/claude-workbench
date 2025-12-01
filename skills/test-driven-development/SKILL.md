@@ -1,5 +1,5 @@
 ---
-name: test-driven-development
+name: workbench:test-driven-development
 description: Enforce strict TDD workflow for all development tasks. Use when implementing new features, fixing bugs, or refactoring code. Ensures comprehensive test coverage (unit, integration, e2e) before writing implementation code. Activates automatically for all coding tasks unless explicitly authorized to skip testing.
 when_to_use: When implementing new features. When fixing bugs. When refactoring code. For ALL coding tasks unless explicitly authorized to skip. Always write tests before implementation code.
 allowed-tools: Read, Write, Edit, Bash, Grep, Glob

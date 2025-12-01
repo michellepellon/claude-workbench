@@ -1,5 +1,5 @@
 ---
-name: seo-expert
+name: workbench:seo-expert
 description: Comprehensive SEO expertise covering technical optimization, content strategy, and analysis. Use for keyword research, content audits, schema markup, meta optimization, and content planning.
 when_to_use: When optimizing content for search. When planning content strategy. When auditing existing content. When implementing schema markup. When analyzing keyword opportunities.
 version: 1.0.0

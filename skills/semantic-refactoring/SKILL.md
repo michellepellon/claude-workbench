@@ -1,5 +1,5 @@
 ---
-name: semantic-refactoring
+name: workbench:semantic-refactoring
 description: Perform safe, codebase-wide refactoring using semantic code understanding. Leverages Serena MCP tools when available for symbol-level operations.
 when_to_use: When renaming symbols across files. When moving functions/classes. When refactoring requires understanding all references. When grep-based search is insufficient.
 version: 1.0.0
