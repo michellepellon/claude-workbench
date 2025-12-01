@@ -1,5 +1,5 @@
 {
-  "name": "claude-workbench",
+  "name": "workbench",
   "version": "1.0.0",
   "description": "Reusable Claude Code configuration with skills and commands",
   "author": "mpellon",
