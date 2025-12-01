@@ -1,0 +1,7 @@
+category,region,status
+A,North,Active
+B,South,Inactive
+A,East,Active
+C,West,Pending
+B,North,Active
+A,South,Inactive

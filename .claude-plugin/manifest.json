@@ -1,0 +1,40 @@
+{
+  "name": "claude-workbench",
+  "version": "1.0.0",
+  "description": "Reusable Claude Code configuration with skills and commands",
+  "author": "mpellon",
+  "license": "MIT",
+  "homepage": "https://github.com/mpellon/claude-workbench",
+  "skills": [
+    "skills/brainstorming",
+    "skills/browsing",
+    "skills/creating-skills",
+    "skills/data-visualization",
+    "skills/executing-plans",
+    "skills/javascript-typescript",
+    "skills/pdf",
+    "skills/python-development",
+    "skills/quick-descriptive-stats",
+    "skills/remembering-conversations",
+    "skills/semantic-refactoring",
+    "skills/seo-expert",
+    "skills/shell-scripting",
+    "skills/simplifying-control-flow",
+    "skills/sql-db-design",
+    "skills/sql-optimization",
+    "skills/test-driven-development",
+    "skills/writing-clearly-and-concisely",
+    "skills/xlsx"
+  ],
+  "commands": [
+    "commands/accessibility-audit.md",
+    "commands/analyze-issue.md",
+    "commands/commit.md",
+    "commands/create-pr.md",
+    "commands/plan.md",
+    "commands/rename-branch.md",
+    "commands/review-script.md",
+    "commands/session-summary.md",
+    "commands/worktree.md"
+  ]
+}
