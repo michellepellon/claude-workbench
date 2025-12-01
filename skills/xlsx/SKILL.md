@@ -1,5 +1,5 @@
 ---
-name: workbench:xlsx
+name: xlsx
 description: Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. Use when working with Excel files for data analysis, financial models, reporting, or any spreadsheet operations.
 when_to_use: When creating or editing Excel files. When building financial models. When analyzing spreadsheet data. When generating reports in Excel format. When working with formulas and formatting. When reading or writing .xlsx files.
 allowed-tools: Read, Write, Bash

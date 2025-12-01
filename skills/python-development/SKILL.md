@@ -1,5 +1,5 @@
 ---
-name: workbench:python-development
+name: python-development
 description: Expert Python development covering modern Python 3.12+, async patterns, FastAPI/Django, testing with pytest, performance optimization, and packaging. Use for production-grade Python code.
 when_to_use: When writing Python code. When building APIs with FastAPI or Django. When writing async code. When optimizing performance. When packaging libraries. When writing tests with pytest.
 version: 1.0.0

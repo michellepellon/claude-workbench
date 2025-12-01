@@ -1,5 +1,5 @@
 ---
-name: workbench:simplifying-control-flow
+name: simplifying-control-flow
 description: Flatten nested conditionals with early returns or table-driven methods - keep nesting depth under 3 levels
 when_to_use: When writing conditional logic. When nesting depth exceeds 2-3 levels. When multiple conditions determine outcome. When similar if/else patterns repeat. When business rules encoded in nested ifs. When control flow is hard to follow. When nested if statements exist. When adding new cases requires deep surgery.
 version: 1.0.0

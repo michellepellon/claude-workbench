@@ -1,5 +1,5 @@
 ---
-name: workbench:javascript-typescript
+name: javascript-typescript
 description: Expert JavaScript and TypeScript development covering modern ES6+ patterns, advanced types, async programming, Node.js backends, and testing. Use for writing production-grade JS/TS code.
 when_to_use: When writing JavaScript or TypeScript. When building Node.js backends. When working with async patterns. When designing type systems. When writing tests with Jest/Vitest.
 version: 1.0.0

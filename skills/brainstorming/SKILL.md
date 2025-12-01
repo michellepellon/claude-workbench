@@ -1,5 +1,5 @@
 ---
-name: workbench:brainstorming
+name: brainstorming
 description: Refine rough ideas into fully-formed designs through structured Socratic questioning, alternative exploration, and incremental validation. Use before writing code or creating implementation plans.
 when_to_use: When implementing new feature before writing code. When user has rough idea needing refinement. When designing architecture. Before creating implementation plans. When exploring alternatives. When requirements are unclear or incomplete.
 version: 1.0.0

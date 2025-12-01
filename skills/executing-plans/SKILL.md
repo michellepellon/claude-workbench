@@ -1,5 +1,5 @@
 ---
-name: workbench:executing-plans
+name: executing-plans
 description: Execute implementation plans in controlled batches with review checkpoints - prevents continuous execution, enforces verification steps, stops at blockers
 when_to_use: When given a complete implementation plan to execute, when you have a written plan with multiple tasks, when implementing a step-by-step implementation guide, when plan says "execute this", when you're tempted to implement everything at once without checkpoints
 version: 1.0.0

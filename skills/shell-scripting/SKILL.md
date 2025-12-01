@@ -1,5 +1,5 @@
 ---
-name: workbench:shell-scripting
+name: shell-scripting
 description: Write production-grade Bash scripts with defensive patterns, proper error handling, and testability. Use when writing automation, CI/CD pipelines, or system utilities.
 when_to_use: When writing shell scripts. When reviewing bash code. When debugging script failures. When setting up CI/CD pipelines. When script needs to be robust and maintainable.
 version: 1.0.0

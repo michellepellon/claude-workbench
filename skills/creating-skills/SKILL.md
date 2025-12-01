@@ -1,5 +1,5 @@
 ---
-name: workbench:creating-skills
+name: creating-skills
 description: TDD for process documentation - test with subagents before writing, iterate until bulletproof
 when_to_use: When you discover a technique, pattern, or tool worth documenting for reuse. When you've written a skill and need to verify it works before deploying.
 version: 4.0.0

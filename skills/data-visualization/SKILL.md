@@ -1,5 +1,5 @@
 ---
-name: workbench:data-visualization
+name: data-visualization
 description: Create effective data visualizations following Tufte's principles. Use D3.js for custom interactive graphics, or simpler libraries for standard charts. Emphasizes data-ink ratio, clarity, and avoiding chartjunk.
 when_to_use: When creating charts, graphs, dashboards. When visualizing data for presentations or reports. When building interactive data explorations. When standard charts feel cluttered or unclear.
 version: 1.0.0
