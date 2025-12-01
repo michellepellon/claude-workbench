@@ -43,45 +43,45 @@ Reusable expertise modules that Claude activates when relevant:
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:python-development` | Expert Python 3.12+, async patterns, FastAPI/Django, pytest |
-| `workbench:javascript-typescript` | ES6+ patterns, advanced types, async, Node.js, Jest/Vitest |
-| `workbench:shell-scripting` | Production Bash with defensive patterns, error handling, testability |
-| `workbench:sql-db-design` | PostgreSQL schema design, constraints, indexing, JSONB |
-| `workbench:sql-optimization` | Query optimization via EXPLAIN analysis, indexing, query rewriting |
+| `python-development` | Expert Python 3.12+, async patterns, FastAPI/Django, pytest |
+| `javascript-typescript` | ES6+ patterns, advanced types, async, Node.js, Jest/Vitest |
+| `shell-scripting` | Production Bash with defensive patterns, error handling, testability |
+| `sql-db-design` | PostgreSQL schema design, constraints, indexing, JSONB |
+| `sql-optimization` | Query optimization via EXPLAIN analysis, indexing, query rewriting |
 
 #### Testing & Quality
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:test-driven-development` | Strict TDD workflow with comprehensive coverage |
-| `workbench:semantic-refactoring` | Safe codebase-wide refactoring with Serena MCP |
-| `workbench:simplifying-control-flow` | Flatten nested conditionals with early returns |
+| `test-driven-development` | Strict TDD workflow with comprehensive coverage |
+| `semantic-refactoring` | Safe codebase-wide refactoring with Serena MCP |
+| `simplifying-control-flow` | Flatten nested conditionals with early returns |
 
 #### Data & Visualization
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:data-visualization` | Effective visualizations with Tufte's principles, D3.js |
-| `workbench:quick-descriptive-stats` | Automatic EDA and statistics for CSV files |
-| `workbench:pdf` | Extract, create, merge, split PDF documents |
-| `workbench:xlsx` | Excel operations with formulas, formatting, analysis |
+| `data-visualization` | Effective visualizations with Tufte's principles, D3.js |
+| `quick-descriptive-stats` | Automatic EDA and statistics for CSV files |
+| `pdf` | Extract, create, merge, split PDF documents |
+| `xlsx` | Excel operations with formulas, formatting, analysis |
 
 #### Content & SEO
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:seo-expert` | Technical SEO, content strategy, schema markup |
-| `workbench:writing-clearly-and-concisely` | Strunk's rules for clear prose |
+| `seo-expert` | Technical SEO, content strategy, schema markup |
+| `writing-clearly-and-concisely` | Strunk's rules for clear prose |
 
 #### Workflow
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:brainstorming` | Refine ideas through Socratic questioning |
-| `workbench:creating-skills` | TDD for process documentation |
-| `workbench:executing-plans` | Controlled batch execution with checkpoints |
-| `workbench:remembering-conversations` | Search past Claude Code sessions |
-| `workbench:browsing` | Chrome automation via DevTools Protocol |
+| `brainstorming` | Refine ideas through Socratic questioning |
+| `creating-skills` | TDD for process documentation |
+| `executing-plans` | Controlled batch execution with checkpoints |
+| `remembering-conversations` | Search past Claude Code sessions |
+| `browsing` | Chrome automation via DevTools Protocol |
 
 ### MCP Servers
 
