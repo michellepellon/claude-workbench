@@ -25,14 +25,14 @@ Slash commands for common development tasks:
 
 | Command | Description |
 |---------|-------------|
-| `/accessibility-audit` | Run WCAG accessibility audit on a project |
-| `/analyze-issue` | Convert GitHub issue to technical specification |
-| `/commit` | Create well-formatted conventional commits |
-| `/create-pr` | Create pull request with summary and test plan |
-| `/plan` | Create implementation plan for a task |
-| `/rename-branch` | Rename branch based on its changes |
-| `/review-script` | Review shell script for best practices |
-| `/session-summary` | Summarize current session |
+| `/accessibility-audit` | Run accessibility audit on the current project |
+| `/analyze-issue` | Analyze GitHub issue and create technical specification |
+| `/commit` | Create well-formatted commit for staged changes |
+| `/create-pr` | Create pull request for the current branch |
+| `/plan` | Create implementation plan for provided input |
+| `/rename-branch` | Rename current branch based on its changes |
+| `/review-script` | Review shell script for defensive patterns and best practices |
+| `/session-summary` | Summarize session and output to console |
 | `/worktree` | Create git worktree for isolated development |
 
 ### Skills (19)
@@ -43,11 +43,11 @@ Reusable expertise modules that Claude activates when relevant:
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:python-development` | Modern Python 3.12+, FastAPI, Django, pytest, async patterns |
-| `workbench:javascript-typescript` | ES6+, TypeScript types, Node.js, Jest/Vitest |
-| `workbench:shell-scripting` | Production Bash with defensive patterns, ShellCheck, Bats |
-| `workbench:sql-db-design` | PostgreSQL schema design, constraints, indexing |
-| `workbench:sql-optimization` | Query optimization, EXPLAIN analysis, N+1 fixes |
+| `workbench:python-development` | Expert Python 3.12+, async patterns, FastAPI/Django, pytest |
+| `workbench:javascript-typescript` | ES6+ patterns, advanced types, async, Node.js, Jest/Vitest |
+| `workbench:shell-scripting` | Production Bash with defensive patterns, error handling, testability |
+| `workbench:sql-db-design` | PostgreSQL schema design, constraints, indexing, JSONB |
+| `workbench:sql-optimization` | Query optimization via EXPLAIN analysis, indexing, query rewriting |
 
 #### Testing & Quality
 
@@ -55,16 +55,16 @@ Reusable expertise modules that Claude activates when relevant:
 |-------|-------------|
 | `workbench:test-driven-development` | Strict TDD workflow with comprehensive coverage |
 | `workbench:semantic-refactoring` | Safe codebase-wide refactoring with Serena MCP |
-| `workbench:simplifying-control-flow` | Flatten nested conditionals, early returns |
+| `workbench:simplifying-control-flow` | Flatten nested conditionals with early returns |
 
 #### Data & Visualization
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:data-visualization` | Charts with Tufte's principles, D3.js patterns |
-| `workbench:quick-descriptive-stats` | Automatic EDA for CSV files |
+| `workbench:data-visualization` | Effective visualizations with Tufte's principles, D3.js |
+| `workbench:quick-descriptive-stats` | Automatic EDA and statistics for CSV files |
 | `workbench:pdf` | Extract, create, merge, split PDF documents |
-| `workbench:xlsx` | Excel file operations, formulas, formatting |
+| `workbench:xlsx` | Excel operations with formulas, formatting, analysis |
 
 #### Content & SEO
 
@@ -77,8 +77,8 @@ Reusable expertise modules that Claude activates when relevant:
 
 | Skill | Description |
 |-------|-------------|
-| `workbench:brainstorming` | Socratic questioning to refine ideas |
-| `workbench:creating-skills` | TDD for writing new skills |
+| `workbench:brainstorming` | Refine ideas through Socratic questioning |
+| `workbench:creating-skills` | TDD for process documentation |
 | `workbench:executing-plans` | Controlled batch execution with checkpoints |
 | `workbench:remembering-conversations` | Search past Claude Code sessions |
 | `workbench:browsing` | Chrome automation via DevTools Protocol |
@@ -158,7 +158,7 @@ Create a new skill directory with a `SKILL.md` file:
 
 ```markdown
 ---
-name: workbench:my-skill
+name: my-skill
 description: What this skill does
 when_to_use: When to activate this skill
 version: 1.0.0
@@ -170,7 +170,7 @@ allowed-tools: Read, Write, Edit, Bash
 Instructions for Claude when this skill is active...
 ```
 
-Note: The `workbench:` prefix prevents namespace collisions with other plugins.
+Note: The `workbench:` prefix is added automatically by the plugin system.
 
 Add the skill to `.claude-plugin/manifest.json`:
 

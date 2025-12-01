@@ -4,7 +4,7 @@
   "description": "Reusable Claude Code configuration with skills and commands",
   "author": "mpellon",
   "license": "MIT",
-  "homepage": "https://github.com/mpellon/claude-workbench",
+  "homepage": "https://github.com/michellepellon/claude-workbench",
   "skills": [
     "skills/brainstorming",
     "skills/browsing",
