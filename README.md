@@ -216,11 +216,189 @@ Add to manifest:
 - Optional: `gh` CLI (for GitHub commands)
 - Optional: `shellcheck` (for shell script review)
 
+## Recommended Settings
+
+Claude Code settings cannot be distributed via plugins. Add these to your settings file:
+
+- **User-wide**: `~/.claude/settings.json`
+- **Project-level** (shared): `.claude/settings.json`
+- **Project-level** (local): `.claude/settings.local.json`
+
+### Performance & Cost Optimization
+
+Reduce API costs and improve response times by adjusting token limits and disabling non-essential features.
+
+```json
+{
+  "env": {
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "8000",
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1",
+    "DISABLE_COST_WARNINGS": "1"
+  }
+}
+```
+
+### Developer Experience
+
+Enhanced development environment with useful utilities and debugging features.
+
+```json
+{
+  "env": {
+    "USE_BUILTIN_RIPGREP": "1",
+    "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "1",
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "0"
+  }
+}
+```
+
+### Privacy & Telemetry
+
+Disable telemetry, error reporting, and non-essential network traffic.
+
+```json
+{
+  "env": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_BUG_COMMAND": "1"
+  }
+}
+```
+
+### Git Commit Attribution
+
+Disable the Claude co-authorship line for clean commit history or organizational policies.
+
+```json
+{
+  "includeCoAuthoredBy": false
+}
+```
+
+### Data Retention
+
+Set chat transcript retention period (default is shorter).
+
+```json
+{
+  "cleanupPeriodDays": 90
+}
+```
+
+### Permissions: Common npm Commands
+
+Allow standard npm development commands.
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run test:*)",
+      "Bash(npm run build)",
+      "Bash(npm start)"
+    ]
+  }
+}
+```
+
+### Permissions: Git Operations
+
+Allow common git operations for version control workflow.
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git log:*)"
+    ]
+  }
+}
+```
+
+### Permissions: Full Development Environment
+
+Comprehensive permissions for trusted development environments where productivity is prioritized.
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(yarn:*)",
+      "Bash(node:*)",
+      "Bash(git:*)",
+      "Bash(docker:*)",
+      "Bash(python:*)",
+      "Bash(pip:*)",
+      "Read(**/*.json)",
+      "Read(**/*.js)",
+      "Read(**/*.ts)",
+      "Read(**/*.py)",
+      "Edit(**/*.js)",
+      "Edit(**/*.ts)",
+      "Edit(**/*.py)",
+      "Edit(**/*.json)",
+      "Write(**/*.js)",
+      "Write(**/*.ts)",
+      "Write(**/*.py)"
+    ],
+    "deny": [
+      "Read(./.env*)",
+      "Read(./secrets/**)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)"
+    ]
+  }
+}
+```
+
+### Security: Deny Sensitive Files
+
+Prevent access to environment variables and secrets.
+
+```json
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./config/credentials.json)"
+    ]
+  }
+}
+```
+
+### Status Line: Context Monitor
+
+Real-time context usage monitor with visual progress bars, color-coded alerts, and session analytics (cost, duration, lines changed).
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "python3 .claude/scripts/context-monitor.py"
+  }
+}
+```
+
+The context monitor script is included in this repository at `.claude/scripts/context-monitor.py`. Copy it to your project's `.claude/scripts/` directory.
+
 ## Credits
 
-Skills and commands adapted from:
+Skills, commands, and scripts adapted from:
 
 - [wshobson/agents](https://github.com/wshobson/agents) - Python, JS/TS, SQL, shell scripting, SEO
+- [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) - Context monitor status line
 - [jerseycheese/Narraitor](https://github.com/jerseycheese/Narraitor) - Issue analysis
 - [evmts/tevm-monorepo](https://github.com/evmts/tevm-monorepo) - Commit formatting, worktrees
 - [liam-hq/liam](https://github.com/liam-hq/liam) - PR creation
